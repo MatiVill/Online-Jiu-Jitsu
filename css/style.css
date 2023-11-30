@@ -1,0 +1,460 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilos Globales */
+
+ul,ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+/* Estilos Header */
+
+.logo {
+    width: 90px;
+    height: 90PX;
+    padding: 3px;
+    margin: 3px;
+}
+
+
+header {
+    grid-area: header;
+    background-color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid;
+    border-width: thin;
+
+}
+
+body>nav {
+    grid-area: nav;
+    background-color: black;
+    position: fixed;
+    height: 100%;
+    width: 150px;
+}
+
+
+nav ul li {
+    font-size: larger;
+    color: whitesmoke;
+    font-weight: 900;
+    font-style: italic;
+    padding: 10px;
+}
+
+.estiloBoton1 {
+    background: rgb(255, 255, 255);
+    border-radius: 40px;
+    height: 35px;
+    width: 150px;
+    font-size: medium;
+    font-weight: 700;
+}
+
+.estiloBoton2 {
+    background: rgba(0, 0, 0, 0.708);
+    color: whitesmoke;
+    border-radius: 40px;
+    height: 35px;
+    width: 150px;
+    font-size: medium;
+    margin-right: 5px;
+}
+
+
+/* Estilos Footer */
+
+footer {
+    grid-area: footer;
+    background-color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    border-top: solid;
+    border-width: thin;
+}
+
+.logoFooter {
+    width: 200px;
+    height: 200px;
+    padding: 3px;
+    margin: 3px;
+}
+
+.logoRedes {
+    width: 50px;
+    height: 50PX;
+    padding: 3px;
+    margin: 3px;
+}
+
+#mapa {
+    width: 100%;
+    height: 100%;
+}
+
+.listaRedes {
+    display: flex;
+}
+
+.contenedorFooter {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos INDEX */
+
+#bodyHome {
+    display: grid;
+    grid-template-areas: 
+    "nav header header"
+    "nav portada portada"
+    "nav section1 section2"
+    "nav servicios servicios"
+    "nav footer footer";
+    grid-template-columns: 150px 1fr 1fr;
+    grid-template-rows: 100px 100vh 1fr auto auto;
+}
+
+#portada {
+    grid-area: portada;
+    background-image: url(../Img/Fondo\ 1.jpg);
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+    font-size: x-large;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#presentacion {
+    grid-area: section1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 100px 25px 100px 25px;
+}
+
+#comoFunciona {
+    grid-area: section2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 50px 25px 50px 25px;
+}
+
+.texto {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.circulo {
+	border-radius: 50%;
+    width: 60px;
+	height: 60px;
+	background: whitesmoke;
+	color:black;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 2.5;
+	text-align: center;
+}
+
+.articulo {
+    width: 200px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+#servicios {
+    grid-area: servicios;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-image: url(../Img/Fondo\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+    font-weight: 700;
+}
+
+
+/* Estilos CONTENIDO */
+
+#bodyContenido {
+    display: grid;
+    grid-template-areas: 
+    "nav header header"
+    "nav contenido contenido"
+    "nav footer footer";
+    grid-template-columns: 150px 1fr 1fr;
+    grid-template-rows: 100px 1fr auto;
+}
+
+#contenido {
+    grid-area: contenido;
+}
+.contenido1 {
+    font-size: larger;
+    margin: 10px;
+}
+
+.contenido2 {
+    margin-top: 20px;
+    font-size: larger;
+    margin: 10px;
+}
+.video {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    flex-wrap: wrap;
+    width: 280px;
+    
+}
+
+.listaVideos {
+    display: flex;
+    margin-bottom: 50px;
+    overflow: hidden;
+
+}
+
+.tamañoVideo {
+    width: 280px;
+}
+
+
+/* Estilos TIENDA */
+#bodyTienda {
+    display: grid;
+    grid-template-areas: 
+    "nav header header"
+    "nav tienda tienda"
+    "nav footer footer";
+    grid-template-columns: 150px 1fr 1fr;
+    grid-template-rows: 100px 1fr auto;
+}
+
+#tienda {
+    grid-area: tienda;
+} 
+
+.seccionTienda {
+    height: 600px;
+    width: 300px;
+}
+
+#tiendaPortada {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Estilos EQUIPO */
+
+#bodyEquipo {
+    display: grid;
+    grid-template-areas: 
+    "nav header header"
+    "nav equipo equipo"
+    "nav footer footer";
+    grid-template-columns: 150px 1fr 1fr;
+    grid-template-rows: 100px 1fr auto;
+}
+
+#equipo {
+    grid-area: equipo;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#tituloEquipo {
+text-align: center;
+padding-top: 30px;
+padding-bottom: 30px;
+font-size: xx-large;
+
+}
+
+.fotoMiembro {
+    width: 275px;
+    height: 210px;
+}
+
+.resena {
+    width: 600px;
+    font-size: large;
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.cajaMiembro {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.miembro1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.miembro2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.nombre2 {
+    text-align: end;
+}
+
+/* Estilos Contacto */
+
+#bodyContacto {
+    display: grid;
+    grid-template-areas: 
+    "nav header header"
+    "nav contacto contacto"
+    "nav footer footer";
+    grid-template-columns: 150px 1fr 1fr;
+    grid-template-rows: 100px 1fr auto;
+}
+
+#contacto {
+    grid-area: contacto;
+}
+
+#contactoInput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: larger;
+}
+
+.input {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* TABLET: RESOLUCIÓN MENOR A 1023px */
+
+@media screen and (max-width: 1023px) {
+
+    #bodyHome, #bodyContenido, #bodyTienda, #bodyEquipo, #bodyContacto {
+        display: flex;
+        flex-direction: column;
+    }
+    body>nav {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    nav ul {
+        margin: 10px
+    }
+    #portada {
+        height: 50vh;
+    }
+    #servicios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .articulo {
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    footer {
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    .contenedorFooter {
+        text-align: center;
+        font-size: larger;
+    }
+
+}
+
+
+/* MOBILE: RESOLUCIÓN MENOR A 426px */
+
+@media screen and (max-width: 426px) {
+    * {
+        font-size: medium;
+    }
+    header {
+        justify-content: space-between;
+    }
+    .logo {
+        width: 50px;
+        height: 50PX;
+        padding: 3px;
+        margin: 3px;
+    }
+    .estiloBoton1 {
+        border-radius: 20px;
+        height: 30px;
+        width: 150px;
+        font-size: smaller;
+        font-weight: 500;
+    }
+        .estiloBoton2 {
+        border-radius: 20px;
+        height: 30px;
+        width: 130px;
+        font-size: smaller;
+        font-weight: 500;
+    }
+    .logoFooter {
+        width: 100px;
+        height: 100px;
+        padding: 3px;
+        margin: 3px;
+    }
+}
+
+
