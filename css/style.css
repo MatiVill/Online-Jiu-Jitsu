@@ -21,13 +21,10 @@ a {
 .logo {
     width: 90px;
     height: 90PX;
-    padding: 3px;
-    margin: 3px;
 }
 
 
 header {
-    grid-area: header;
     background-color: whitesmoke;
     display: flex;
     flex-wrap: wrap;
@@ -39,11 +36,11 @@ header {
 }
 
 body>nav {
-    grid-area: nav;
     background-color: black;
     position: fixed;
     height: 100%;
     width: 150px;
+
 }
 
 
@@ -98,8 +95,7 @@ footer {
 .logoRedes {
     width: 50px;
     height: 50PX;
-    padding: 3px;
-    margin: 3px;
+    margin-right: 20px;
 }
 
 #mapa {
@@ -119,21 +115,7 @@ footer {
 }
 
 /* Estilos INDEX */
-
-#bodyHome {
-    display: grid;
-    grid-template-areas: 
-    "nav header header"
-    "nav portada portada"
-    "nav section1 section2"
-    "nav servicios servicios"
-    "nav footer footer";
-    grid-template-columns: 150px 1fr 1fr;
-    grid-template-rows: 100px 100vh 1fr auto auto;
-}
-
 #portada {
-    grid-area: portada;
     background-image: url(../Img/Fondo\ 1.jpg);
     background-size: cover;
     background-position: center;
@@ -143,10 +125,23 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 118px;
+    align-items: center;
+    min-height: 50vh;
+}
+
+#textoPortada {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+
 }
 
 #presentacion {
-    grid-area: section1;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -156,8 +151,8 @@ footer {
     margin: 100px 25px 100px 25px;
 }
 
+
 #comoFunciona {
-    grid-area: section2;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -195,7 +190,6 @@ footer {
 }
 
 #servicios {
-    grid-area: servicios;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -211,19 +205,6 @@ footer {
 
 /* Estilos CONTENIDO */
 
-#bodyContenido {
-    display: grid;
-    grid-template-areas: 
-    "nav header header"
-    "nav contenido contenido"
-    "nav footer footer";
-    grid-template-columns: 150px 1fr 1fr;
-    grid-template-rows: 100px 1fr auto;
-}
-
-#contenido {
-    grid-area: contenido;
-}
 .contenido1 {
     font-size: larger;
     margin: 10px;
@@ -256,19 +237,6 @@ footer {
 
 
 /* Estilos TIENDA */
-#bodyTienda {
-    display: grid;
-    grid-template-areas: 
-    "nav header header"
-    "nav tienda tienda"
-    "nav footer footer";
-    grid-template-columns: 150px 1fr 1fr;
-    grid-template-rows: 100px 1fr auto;
-}
-
-#tienda {
-    grid-area: tienda;
-} 
 
 .seccionTienda {
     height: 600px;
@@ -286,18 +254,7 @@ footer {
 
 /* Estilos EQUIPO */
 
-#bodyEquipo {
-    display: grid;
-    grid-template-areas: 
-    "nav header header"
-    "nav equipo equipo"
-    "nav footer footer";
-    grid-template-columns: 150px 1fr 1fr;
-    grid-template-rows: 100px 1fr auto;
-}
-
 #equipo {
-    grid-area: equipo;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -343,20 +300,6 @@ font-size: xx-large;
 
 /* Estilos Contacto */
 
-#bodyContacto {
-    display: grid;
-    grid-template-areas: 
-    "nav header header"
-    "nav contacto contacto"
-    "nav footer footer";
-    grid-template-columns: 150px 1fr 1fr;
-    grid-template-rows: 100px 1fr auto;
-}
-
-#contacto {
-    grid-area: contacto;
-}
-
 #contactoInput {
     display: flex;
     flex-direction: column;
@@ -381,18 +324,12 @@ font-size: xx-large;
         display: flex;
         flex-direction: column;
     }
-    body>nav {
-        position: relative;
-        width: 100%;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-    }
+
     nav ul {
         margin: 10px
     }
     #portada {
-        height: 50vh;
+
     }
     #servicios {
         display: flex;
@@ -429,12 +366,7 @@ font-size: xx-large;
     header {
         justify-content: space-between;
     }
-    .logo {
-        width: 50px;
-        height: 50PX;
-        padding: 3px;
-        margin: 3px;
-    }
+
     .estiloBoton1 {
         border-radius: 20px;
         height: 30px;
