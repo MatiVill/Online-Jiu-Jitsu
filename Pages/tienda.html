@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Jiu Jitsu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../Img/Logo Academia 1.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,29 +20,48 @@
 <body id="bodyTienda">
 
     <header>
-        <div id="iconoPortada">
-            <a href="../index.html"> <img class="logo" src="../Img/Logo Academia 1.png" alt="Logo Academia"> </a>
-        </div>
-
-        <div>
-            <button class="estiloBoton1"> INICIAR SESIÓN </button>
-            <button class="estiloBoton2"> SUSCRIBIRSE </button>
-        </div>
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"> <img class="logo" src="../Img/Logo Academia 1.png"
+                        alt="Logo Academia"> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contenido.html">Contenido</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="equipo.html">Equipo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="../index.html"> Home </a></li>
-            <li><a href="contenido.html"> Contenido </a></li>
-            <li><a href="tienda.html"> Tienda </a></li>
-            <li><a href="equipo.html"> Equipo </a></li>
-            <li><a href="contacto.html"> Contacto </a></li>
-        </ul>
-    </nav>
-
     <main id="tienda">
+        <nav id="navTienda">
+            <ul id="listaTienda">
+                <li>Kimomos</li>
+                <li>Nogi/Grappling</li>
+                <li>Streetwear</li>
+                <li>Accesorios</li>
+            </ul>
+        </nav>
 
-        <section id="tiendaPortada">
+        <section id="tiendaSeccion1">
             <a href=""> <img class="seccionTienda" src="../Img/kimono.jpg" alt="Kimonos"> </a>
             <a href=""> <img class="seccionTienda" src="../Img/nogi.png" alt="Nogi"> </a>
             <a href=""> <img class="seccionTienda" src="../Img/streetwear.jpg" alt="Streetwear"> </a>
@@ -92,6 +113,9 @@
 
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

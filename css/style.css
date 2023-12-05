@@ -208,6 +208,7 @@ footer {
 .contenido1 {
     font-size: larger;
     margin: 10px;
+    padding-top: 118px;
 }
 
 .contenido2 {
@@ -220,7 +221,6 @@ footer {
     flex-direction: column;
     margin: 10px;
     flex-wrap: wrap;
-    width: 280px;
     
 }
 
@@ -237,6 +237,27 @@ footer {
 
 
 /* Estilos TIENDA */
+
+#tienda {
+    padding-top: 118px;
+    display: grid;
+    grid-template-areas: 
+    "navTienda navTienda navTienda navTienda"
+    "filtros filtros filtros filtros"
+    "item1 item2 item3 item4";
+}
+
+#navTienda {
+    grid-area: navTienda;
+    background-color: black;
+}
+
+#listaTienda {
+    margin-top: 16px;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
 
 .seccionTienda {
     height: 600px;
@@ -320,17 +341,6 @@ font-size: xx-large;
 
 @media screen and (max-width: 1023px) {
 
-    #bodyHome, #bodyContenido, #bodyTienda, #bodyEquipo, #bodyContacto {
-        display: flex;
-        flex-direction: column;
-    }
-
-    nav ul {
-        margin: 10px
-    }
-    #portada {
-
-    }
     #servicios {
         display: flex;
         flex-direction: column;
@@ -363,24 +373,7 @@ font-size: xx-large;
     * {
         font-size: medium;
     }
-    header {
-        justify-content: space-between;
-    }
 
-    .estiloBoton1 {
-        border-radius: 20px;
-        height: 30px;
-        width: 150px;
-        font-size: smaller;
-        font-weight: 500;
-    }
-        .estiloBoton2 {
-        border-radius: 20px;
-        height: 30px;
-        width: 130px;
-        font-size: smaller;
-        font-weight: 500;
-    }
     .logoFooter {
         width: 100px;
         height: 100px;

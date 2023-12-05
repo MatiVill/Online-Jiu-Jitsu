@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Jiu Jitsu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../Img/Logo Academia 1.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,39 +17,57 @@
 
 </head>
 
-<body id="bodyContenido">
-
+<body>
     <header>
-        <div id="iconoPortada">
-            <a href="../index.html"> <img class="logo" src="../Img/Logo Academia 1.png" alt="Logo Academia"> </a>
-        </div>
-       
-        <div>
-            <button class="estiloBoton1"> INICIAR SESIÓN </button>
-            <button class="estiloBoton2"> SUSCRIBIRSE </button>
-        </div>
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"> <img class="logo" src="../Img/Logo Academia 1.png"
+                        alt="Logo Academia"> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contenido.html">Contenido</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="equipo.html">Equipo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="../index.html"> Home </a></li>
-            <li><a href="contenido.html"> Contenido </a></li>
-            <li><a href="tienda.html"> Tienda </a></li>
-            <li><a href="equipo.html"> Equipo </a></li>
-            <li><a href="contacto.html"> Contacto </a></li>
-        </ul>
-    </nav>
 
     <main id="contenido">
         <Section class="contenido1">
             <h2>Novedades</h2>
             <article class="listaVideos">
                 <div class="video">
-                    <video src="../vids/man-ties-black-belt-1443081-PREVIEW.mp4" class="tamañoVideo"> </video>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PmG1L4SOrj4?si=5uROhnSTwcCxll5x" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
                     <span> Leg Drag </span>
                 </div>
                 <div class="video">
-                    <video src="../vids/man-ties-black-belt-1443081-PREVIEW.mp4" class="tamañoVideo"> </video>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PmG1L4SOrj4?si=5uROhnSTwcCxll5x" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
                     <span> Knee Slice </span>
                 </div>
             </article>
@@ -71,31 +91,31 @@
         <Section class="contenido2">
             <h2>Avanzados</h2>
             <article class="listaVideos">
-            <div class="video">
-                <video src="../vids/man-ties-black-belt-1443081-PREVIEW.mp4" class="tamañoVideo"> </video>
-                <span> Leg Drag </span>
-            </div>
+                <div class="video">
+                    <video src="../vids/man-ties-black-belt-1443081-PREVIEW.mp4" class="tamañoVideo"> </video>
+                    <span> Leg Drag </span>
+                </div>
 
-            <div class="video">
-                <video src="../vids/man-ties-black-belt-1443081-PREVIEW.mp4" class="tamañoVideo"> </video>
-                <span> Knee Slice </span>
-            </div>
-        </article>
+                <div class="video">
+                    <video src="../vids/man-ties-black-belt-1443081-PREVIEW.mp4" class="tamañoVideo"> </video>
+                    <span> Knee Slice </span>
+                </div>
+            </article>
         </Section>
 
         <Section class="contenido2">
             <h2>Acondicionamiento</h2>
             <article class="listaVideos">
-            <div class="video">
-                <video src="../vids/man-ties-black-belt-1443081-PREVIEW.mp4" class="tamañoVideo"> </video>
-                <span> Mejora tu retención de Guardia </span>
-            </div>
+                <div class="video">
+                    <video src="../vids/man-ties-black-belt-1443081-PREVIEW.mp4" class="tamañoVideo"> </video>
+                    <span> Mejora tu retención de Guardia </span>
+                </div>
 
-            <div class="video">
-                <video src="../vids/man-ties-black-belt-1443081-PREVIEW.mp4" class="tamañoVideo"> </video>
-                <span> Mejora tu grip </span>
-            </div>
-        </article>
+                <div class="video">
+                    <video src="../vids/man-ties-black-belt-1443081-PREVIEW.mp4" class="tamañoVideo"> </video>
+                    <span> Mejora tu grip </span>
+                </div>
+            </article>
         </Section>
 
     </main>
@@ -130,8 +150,8 @@
                 <li> <a target="_blank" href="http://www.instagram.com"> <img class="logoRedes" src="../Img/insta.png"
                             alt="Enlace a Instagram">
                     </a></li>
-                <li> <a target="_blank" href="http://www.twitter.com"> <img class="logoRedes" src="../Img/Twitter-Logо.png"
-                            alt="Enlace a tiktok">
+                <li> <a target="_blank" href="http://www.twitter.com"> <img class="logoRedes"
+                            src="../Img/Twitter-Logо.png" alt="Enlace a tiktok">
                     </a></li>
             </ul>
         </section>
@@ -143,6 +163,9 @@
 
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
