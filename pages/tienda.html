@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Jiu Jitsu</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/Logo Academia 1.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,20 +52,73 @@
     </header>
 
     <main id="tienda">
-        <nav id="navTienda">
-            <ul id="listaTienda">
-                <li>Kimomos</li>
-                <li>Nogi/Grappling</li>
-                <li>Streetwear</li>
-                <li>Accesorios</li>
-            </ul>
-        </nav>
+        <div class="botonesTienda">
+            <div id="ordenarPor">
+                <span>Ordenar por</span>
+            </div>
 
-        <section id="tiendaSeccion1">
-            <a href=""> <img class="seccionTienda" src="../img/kimono.jpg" alt="Kimonos"> </a>
-            <a href=""> <img class="seccionTienda" src="../img/nogi.png" alt="Nogi"> </a>
-            <a href=""> <img class="seccionTienda" src="../img/streetwear.jpg" alt="Streetwear"> </a>
-            <a href=""> <img class="seccionTienda" src="../img/accesorios.webp" alt="accesorios"> </a>
+            <div>
+                <span>Filtros</span>
+                <img id="iconoFiltros" src="../img/iconoFiltros.png" alt="Filtros">
+            </div>
+        </div>
+        <div id="menuTienda">
+            <div>
+                <span>Kimonos</span>
+            </div>
+            <div>
+                <span>Nogi</span>
+            </div>
+            <div>
+                <span>Street</span>
+            </div>
+            <div>
+                <span>Accesorios</span>
+            </div>
+            <div>
+                <span>Todos</span>
+            </div>
+        </div>
+
+
+        <section class="escaparate row">
+
+            <div class="etiquetaProducto col">
+                <img src="../img/Kimono negro 1.webp" alt="Kimono negro lineas rojas">
+                <span>Kimono Vital Negro</span>
+                <span>$100.000</span>
+            </div>
+
+            <div class="etiquetaProducto col">
+                <img src="../img/Kimono negro 2.webp" alt="Kimono negro detalles verdes">
+                <span>Kimono Vital Negro</span>
+                <span>$100.000</span>
+            </div>
+
+            <div class="etiquetaProducto col">
+                <img src="../img/Kimono azul 1.webp" alt="Kimono Azul detalles rojos">
+                <span>Kimono Vital Azul</span>
+                <span>$100.000</span>
+            </div>
+
+            <div class="etiquetaProducto col">
+                <img src="../img/Kimono blanco.webp" alt="Kimono Blanco">
+                <span>Kimono Vital Blanco</span>
+                <span>$100.000</span>
+            </div>
+
+            <div class="etiquetaProducto col">
+                <img src="../img/Kimono verdeagua.webp" alt="Kimono verde agua">
+                <span>Kimono Vital Verde Agua</span>
+                <span>$100.000</span>
+            </div>
+
+            <div class="etiquetaProducto col">
+                <img src="../img/kimono naranja.webp" alt="Kimono naranja">
+                <span>Kimono Vital Naranja</span>
+                <span>$100.000</span>
+            </div>
+
         </section>
 
     </main>
@@ -100,8 +153,8 @@
                 <li> <a target="_blank" href="http://www.instagram.com"> <img class="logoRedes" src="../img/insta.png"
                             alt="Enlace a Instagram">
                     </a></li>
-                <li> <a target="_blank" href="http://www.twitter.com"> <img class="logoRedes" src="../img/Twitter-Logо.png"
-                            alt="Enlace a tiktok">
+                <li> <a target="_blank" href="http://www.twitter.com"> <img class="logoRedes"
+                            src="../img/Twitter-Logо.png" alt="Enlace a tiktok">
                     </a></li>
             </ul>
         </section>
@@ -114,8 +167,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

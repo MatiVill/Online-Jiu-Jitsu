@@ -241,39 +241,41 @@ footer {
 
 #tienda {
     padding-top: 118px;
-    display: grid;
-    grid-template-areas: 
-    "navTienda navTienda navTienda navTienda"
-    "filtros filtros filtros filtros"
-    "item1 item2 item3 item4";
-}
+    }
 
-#navTienda {
-    grid-area: navTienda;
-    background-color: black;
-}
-
-#listaTienda {
-    margin-top: 16px;
-    padding-left: 0;
+#menuTienda {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
-.seccionTienda {
-    height: 600px;
-    width: 300px;
-}
-
-#tiendaPortada {
-    padding-top: 50px;
-    padding-bottom: 50px;
+.botonesTienda {
+    height: 50px;
+    padding-right: 20px;
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
+    justify-content: end;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
+#ordenarPor {
+    padding-right: 20px;
+}
+
+#iconoFiltros {
+    width: 20px;
+}
+
+.etiquetaProducto {
+    max-width: 300px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    border: solid lightgray;
+    border-width: 1px;
+    border-radius: 10%;
+}
 /* Estilos EQUIPO */
 
 #equipo {
@@ -323,6 +325,7 @@ font-size: xx-large;
 /* Estilos Contacto */
 
 #contactoInput {
+    padding-top: 118px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -375,11 +378,34 @@ font-size: xx-large;
         font-size: medium;
     }
 
-    .logoFooter {
+     .logoFooter {
         width: 100px;
         height: 100px;
         padding: 3px;
         margin: 3px;
+    }
+    
+    .botonesTienda {
+        height: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    
+    #ordenarPor {
+        padding-right: 20px;
+    }
+
+    #menuTienda {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .escaparate {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
     }
 }
 
