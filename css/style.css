@@ -6,8 +6,10 @@
 
 /* Estilos Globales */
 
-ul,ol {
+ul,
+ol {
     list-style-type: none;
+    padding: 0px;
 }
 
 a {
@@ -22,7 +24,6 @@ a {
     width: 90px;
     height: 90PX;
 }
-
 
 header {
     background-color: whitesmoke;
@@ -42,7 +43,6 @@ body>nav {
     width: 150px;
 
 }
-
 
 nav ul li {
     font-size: larger;
@@ -81,8 +81,6 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px;
-    border-top: solid;
-    border-width: thin;
 }
 
 .logoFooter {
@@ -151,7 +149,6 @@ footer {
     margin: 100px 25px 100px 25px;
 }
 
-
 #comoFunciona {
     text-align: center;
     display: flex;
@@ -168,15 +165,15 @@ footer {
 }
 
 .circulo {
-	border-radius: 50%;
+    border-radius: 50%;
     width: 60px;
-	height: 60px;
-	background: whitesmoke;
-	color:black;
-	font-weight: 700;
-	font-size: 24px;
-	line-height: 2.5;
-	text-align: center;
+    height: 60px;
+    background: whitesmoke;
+    color: black;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 2.5;
+    text-align: center;
 }
 
 .articulo {
@@ -217,18 +214,19 @@ footer {
     font-size: larger;
     margin: 10px;
 }
-.video {
+
+.contenedorVideo {
     display: flex;
     flex-direction: column;
     margin: 10px;
     flex-wrap: wrap;
-    
 }
 
 .listaVideos {
     display: flex;
     margin-bottom: 50px;
-    overflow: hidden;
+    overflow: auto;
+    white-space: nowrap;
 
 }
 
@@ -241,11 +239,6 @@ footer {
 
 #tienda {
     padding-top: 118px;
-    }
-
-#menuTienda {
-    display: flex;
-    justify-content: space-around;
 }
 
 .botonesTienda {
@@ -265,6 +258,31 @@ footer {
     width: 20px;
 }
 
+#menuTienda {
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.botonProducto {
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 35%;
+    background: whitesmoke;
+    color: black;
+    text-align: center;
+    border: solid thin;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.botonProducto:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+
 .etiquetaProducto {
     max-width: 300px;
     margin: 10px;
@@ -276,6 +294,8 @@ footer {
     border-width: 1px;
     border-radius: 10%;
 }
+
+
 /* Estilos EQUIPO */
 
 #equipo {
@@ -284,10 +304,10 @@ footer {
 }
 
 #tituloEquipo {
-text-align: center;
-padding-top: 30px;
-padding-bottom: 30px;
-font-size: xx-large;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: xx-large;
 
 }
 
@@ -313,11 +333,13 @@ font-size: xx-large;
     display: flex;
     flex-wrap: wrap;
 }
+
 .miembro2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
 }
+
 .nombre2 {
     text-align: end;
 }
@@ -332,13 +354,16 @@ font-size: xx-large;
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: larger;
+    height: 80vh;
 }
 
 .input {
     margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+}
+
+.botonEnviar {
+    margin: 5px;
+
 }
 
 /* TABLET: RESOLUCIÓN MENOR A 1023px */
@@ -353,16 +378,19 @@ font-size: xx-large;
         padding-left: 10px;
         padding-right: 10px;
     }
+
     .articulo {
         width: 100%;
         margin-left: 10px;
         margin-right: 10px;
     }
+
     footer {
         flex-direction: column;
         align-content: center;
         align-items: center;
     }
+
     .contenedorFooter {
         text-align: center;
         font-size: larger;
@@ -378,13 +406,35 @@ font-size: xx-large;
         font-size: medium;
     }
 
-     .logoFooter {
+    .logo {
+        height: 50px;
+        width: 50px;
+    }
+
+    .logoFooter {
         width: 100px;
         height: 100px;
         padding: 3px;
         margin: 3px;
     }
-    
+
+    #portada {
+        padding-top: 80px;
+    }
+
+    .contenido1 {
+        padding-top: 80px;
+    }
+
+    #tienda {
+        padding-top: 80px;
+    }
+
+    #contactoInput {
+        padding-top: 80px;
+        align-items: baseline;
+    }
+
     .botonesTienda {
         height: 50px;
         display: flex;
@@ -392,21 +442,37 @@ font-size: xx-large;
         flex-wrap: nowrap;
         align-items: center;
     }
-    
+
     #ordenarPor {
         padding-right: 20px;
     }
 
     #menuTienda {
-        display: flex;
-        justify-content: space-around;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-bottom: 0px;
+        height: auto;
     }
 
-    .escaparate {
+    .fotoProducto {
+        width: 120px;
+    }
+    .etiquetaProducto {
+        margin: 10px;
+        text-align: center;
         display: flex;
         flex-direction: column;
-        align-content: center;
+        align-items: center;
+        font-weight: bold;
+        border: solid lightgray;
+        border-width: 1px;
+        border-radius: 10%;
+    }
+
+    .video {
+        width: 280px;
+        height: 200px;
     }
 }
-
-
