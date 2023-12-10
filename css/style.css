@@ -283,15 +283,19 @@ footer {
     text-align: center;
     border: solid lightgray;
     border-width: 1px;
-    border-radius: 10%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 
 /* Estilos EQUIPO */
 
 #equipo {
+    padding-top: 118px;
     padding-left: 15px;
     padding-right: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 #tituloEquipo {
@@ -337,15 +341,22 @@ footer {
 
 /* Estilos Contacto */
 
+#contacto {
+    height: 80vh;
+    padding-top: 138px;
+}
+
+.textoPortada2 {
+    text-align: center;
+}
+
 #contactoInput {
-    padding-top: 118px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: larger;
-    height: 80vh;
 }
 
 .input {
@@ -354,7 +365,8 @@ footer {
 
 .botonEnviar {
     margin: 5px;
-
+    display: flex;
+    justify-content: center;
 }
 
 /* TABLET: RESOLUCIÓN MENOR A 1023px */
@@ -423,11 +435,6 @@ footer {
         padding-top: 80px;
     }
 
-    #contactoInput {
-        padding-top: 80px;
-        align-items: baseline;
-    }
-
     .botonesTienda {
         height: 50px;
         display: flex;
@@ -470,5 +477,47 @@ footer {
     .video {
         width: 280px;
         height: 200px;
+    }
+
+    #equipo {
+        padding-top: 80px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 80px;
+    }
+
+    #tituloEquipo {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 30px;
+    }
+
+    .resena {
+        text-align: left;
+    }
+
+    .cajaMiembro {
+        text-align: center;
+    }
+
+    .miembro1 {
+        justify-content: center;
+    }
+
+    .miembro2 {
+        justify-content: center;
+    }
+
+    .nombre2 {
+        text-align: center;
+    }
+
+    #contacto {
+        height: 80vh;
+        padding-top: 100px;
+    }
+
+    #contactoInput {
+        align-items: flex-start;
     }
 }
