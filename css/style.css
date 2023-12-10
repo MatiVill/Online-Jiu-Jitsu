@@ -73,7 +73,8 @@ footer {
 .logoRedes {
     width: 50px;
     height: 50PX;
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 #mapa {
@@ -243,20 +244,22 @@ footer {
     justify-content: space-around;
     height: 70px;
     align-items: center;
-    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: auto;
+    white-space: nowrap;
 }
 
 .botonProducto {
-    min-width: 100px;
+    min-width: 115px;
     margin-left: 5px;
     margin-right: 5px;
-    padding: 5px;
-    border-radius: 35%;
+    border-radius: 30px;
     background: whitesmoke;
     color: black;
     text-align: center;
     border: solid thin;
-    font-size: 16px;
+    font-size: 18px;
     font-style: italic;
 }
 
@@ -266,7 +269,8 @@ footer {
 }
 
 .escaparate {
-    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .etiquetaProducto {
@@ -383,8 +387,10 @@ footer {
         font-size: larger;
     }
 
+    #menuTienda {
+        justify-content: space-between;
+    }
 }
-
 
 /* MOBILE: RESOLUCIÓN MENOR A 426px */
 
@@ -432,21 +438,22 @@ footer {
     }
 
     #ordenarPor {
-        padding-right: 20px;
+        padding-right: 0px;
     }
 
     #menuTienda {
-        justify-content: space-between;
         margin-top: 5px;
         margin-bottom: 5px;
         padding-bottom: 0px;
         height: auto;
-        overflow: auto;
-        white-space: nowrap;
+    }
+
+    .botonProducto {
+        font-size: 16px;
     }
 
     .fotoProducto {
-        width: 120px;
+        width: 140px;
     }
 
     .etiquetaProducto {
