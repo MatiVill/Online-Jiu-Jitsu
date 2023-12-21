@@ -1,0 +1,110 @@
+#portada {
+    background-image: url(../img/fondo1.jpg);
+    background-size: cover;
+    background-position: center;
+    color: $colorSecundario;
+    font-size: x-large;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 118px;
+    align-items: center;
+    min-height: 50vh;
+}
+
+#textoPortada {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+#presentacion {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 100px 25px 100px 25px;
+}
+
+#comoFunciona {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 50px 25px 50px 25px;
+}
+
+.texto {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.circulo {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: whitesmoke;
+    color: black;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 2.5;
+    text-align: center;
+}
+
+.articulo {
+    width: 200px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+#servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-image: url(../img/fondo2.jpg);
+    background-size: cover;
+    background-position: center;
+    color: $colorSecundario;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1023px) {
+
+    #servicios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .articulo {
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #portada {
+        padding-top: 80px;
+    }
+
+}

@@ -1,523 +1,486 @@
+@charset "UTF-8";
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
-/* Estilos Globales */
-
-ul,
-ol {
-    list-style-type: none;
-    padding: 0px;
+ul, ol {
+  list-style-type: none;
+  padding: 0px;
 }
 
 a {
-    text-decoration: none;
-    color: whitesmoke;
+  text-decoration: none;
+  color: whitesmoke;
 }
 
-
-/* Estilos Header */
-
-.logo {
-    width: 90px;
-    height: 90PX;
+@media screen and (max-width: 426px) {
+  * {
+    font-size: medium;
+  }
 }
-
-header {
-    background-color: whitesmoke;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: solid;
-    border-width: thin;
-
-}
-
-body>nav {
-    background-color: black;
-    position: fixed;
-    height: 100%;
-    width: 150px;
-
-}
-
-nav ul li {
-    font-size: larger;
-    color: whitesmoke;
-    font-weight: 900;
-    font-style: italic;
-    padding: 10px;
-}
-
-/* Estilos Footer */
-
 footer {
-    grid-area: footer;
-    background-color: whitesmoke;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
+  grid-area: footer;
+  background-color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 .logoFooter {
-    width: 200px;
-    height: 200px;
-    padding: 3px;
-    margin: 3px;
+  width: 200px;
+  height: 200px;
+  padding: 3px;
+  margin: 3px;
 }
 
 .logoRedes {
-    width: 50px;
-    height: 50PX;
-    margin-right: 10px;
-    margin-left: 10px;
+  width: 50px;
+  height: 50PX;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 #mapa {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .listaRedes {
-    display: flex;
+  display: flex;
 }
 
 .contenedorFooter {
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Estilos INDEX */
-#portada {
-    background-image: url(../img/Fondo\ 1.jpg);
-    background-size: cover;
-    background-position: center;
-    color: whitesmoke;
-    font-size: x-large;
-    text-align: center;
-    display: flex;
+@media screen and (max-width: 1023px) {
+  footer {
     flex-direction: column;
-    justify-content: center;
-    padding-top: 118px;
+    align-content: center;
     align-items: center;
-    min-height: 50vh;
+  }
+  .contenedorFooter {
+    text-align: center;
+    font-size: larger;
+  }
+}
+@media screen and (max-width: 426px) {
+  .logoFooter {
+    width: 100px;
+    height: 100px;
+    padding: 3px;
+    margin: 3px;
+  }
+}
+.logo {
+  width: 90px;
+  height: 90PX;
+}
+
+header {
+  background-color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid;
+  border-width: thin;
+}
+
+@media screen and (max-width: 426px) {
+  .logo {
+    height: 50px;
+    width: 50px;
+  }
+}
+body > nav {
+  background-color: black;
+  position: fixed;
+  height: 100%;
+  width: 150px;
+}
+body > nav ul li {
+  font-size: larger;
+  color: whitesmoke;
+  font-weight: 900;
+  font-style: italic;
+  padding: 10px;
+}
+
+#portada {
+  background-image: url(../img/fondo1.jpg);
+  background-size: cover;
+  background-position: center;
+  color: whitesmoke;
+  font-size: x-large;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 118px;
+  align-items: center;
+  min-height: 50vh;
 }
 
 #textoPortada {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-    margin-right: 20px;
-
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 #presentacion {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 10px;
-    margin: 100px 25px 100px 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  margin: 100px 25px 100px 25px;
 }
 
 #comoFunciona {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 10px;
-    margin: 50px 25px 50px 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  margin: 50px 25px 50px 25px;
 }
 
 .texto {
-    text-align: left;
-    margin-top: 20px;
+  text-align: left;
+  margin-top: 20px;
 }
 
 .circulo {
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    background: whitesmoke;
-    color: black;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 2.5;
-    text-align: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: whitesmoke;
+  color: black;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 2.5;
+  text-align: center;
 }
 
 .articulo {
-    width: 200px;
-    text-align: left;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
+  width: 200px;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
 }
 
 #servicios {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    background-image: url(../img/Fondo\ 2.jpg);
-    background-size: cover;
-    background-position: center;
-    color: whitesmoke;
-    font-weight: 700;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-image: url(../img/fondo2.jpg);
+  background-size: cover;
+  background-position: center;
+  color: whitesmoke;
+  font-weight: 700;
 }
 
-
-/* Estilos CONTENIDO */
-
+@media screen and (max-width: 1023px) {
+  #servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .articulo {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 426px) {
+  #portada {
+    padding-top: 80px;
+  }
+}
 .contenido1 {
-    font-size: larger;
-    margin: 10px;
-    padding-top: 118px;
+  font-size: larger;
+  margin: 10px;
+  padding-top: 118px;
 }
 
 .contenido2 {
-    margin-top: 20px;
-    font-size: larger;
-    margin: 10px;
+  margin-top: 20px;
+  font-size: larger;
+  margin: 10px;
 }
 
 .contenedorVideo {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  flex-wrap: wrap;
 }
 
 .listaVideos {
-    display: flex;
-    margin-bottom: 50px;
-    overflow: auto;
-    white-space: nowrap;
-
+  display: flex;
+  margin-bottom: 50px;
+  overflow: auto;
+  white-space: nowrap;
 }
 
 .tamañoVideo {
-    width: 280px;
+  width: 280px;
 }
 
+@media screen and (max-width: 426px) {
+  .contenido1 {
+    padding-top: 80px;
+  }
+  .video {
+    width: 280px;
+    height: 200px;
+  }
+}
+#equipo {
+  padding-top: 118px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+}
 
-/* Estilos TIENDA */
+#tituloEquipo {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: xx-large;
+}
 
+.fotoMiembro {
+  width: 275px;
+  height: 210px;
+}
+
+.resena {
+  width: 600px;
+  font-size: large;
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.cajaMiembro {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.miembro1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.miembro2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.nombre2 {
+  text-align: end;
+}
+
+@media screen and (max-width: 426px) {
+  #equipo {
+    padding-top: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 80px;
+  }
+  #tituloEquipo {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 30px;
+  }
+  .resena {
+    text-align: left;
+  }
+  .cajaMiembro {
+    text-align: center;
+  }
+  .miembro1 {
+    justify-content: center;
+  }
+  .miembro2 {
+    justify-content: center;
+  }
+  .nombre2 {
+    text-align: center;
+  }
+}
 #tienda {
-    padding-top: 118px;
+  padding-top: 118px;
 }
 
 .botonesTienda {
-    height: 50px;
-    padding-right: 20px;
-    display: flex;
-    justify-content: end;
-    flex-wrap: nowrap;
-    align-items: center;
+  height: 50px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: end;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 #ordenarPor {
-    padding-right: 20px;
+  padding-right: 20px;
 }
 
 #iconoFiltro {
-    width: 20px;
+  width: 20px;
 }
 
 #menuTienda {
-    display: flex;
-    justify-content: space-around;
-    height: 70px;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    overflow: auto;
-    white-space: nowrap;
+  display: flex;
+  justify-content: space-around;
+  height: 70px;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow: auto;
+  white-space: nowrap;
 }
 
 .botonProducto {
-    min-width: 115px;
-    margin-left: 5px;
-    margin-right: 5px;
-    border-radius: 30px;
-    background: whitesmoke;
-    color: black;
-    text-align: center;
-    border: solid thin;
-    font-size: 18px;
-    font-style: italic;
+  min-width: 115px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 30px;
+  background: whitesmoke;
+  color: black;
+  text-align: center;
+  border: solid thin;
+  font-size: 18px;
+  font-style: italic;
 }
 
 .botonProducto:hover {
-    background-color: black;
-    color: whitesmoke;
+  background-color: black;
+  color: whitesmoke;
 }
 
 .escaparate {
-    margin-top: 20px;
-    margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .etiquetaProducto {
-    max-width: 300px;
-    margin: 10px;
+  max-width: 300px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+  border: solid lightgray;
+  border-width: 1px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1023px) {
+  #menuTienda {
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 426px) {
+  #tienda {
+    padding-top: 80px;
+  }
+  .botonesTienda {
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 0px;
+  }
+  #ordenarPor {
+    padding-right: 0px;
+  }
+  #menuTienda {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 0px;
+    height: auto;
+  }
+  .botonProducto {
+    font-size: 16px;
+  }
+  .fotoProducto {
+    width: 140px;
+  }
+  .etiquetaProducto {
+    margin: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-weight: bold;
-    text-align: center;
     border: solid lightgray;
     border-width: 1px;
-    border-radius: 20px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10%;
+  }
 }
-
-
-/* Estilos EQUIPO */
-
-#equipo {
-    padding-top: 118px;
-    padding-left: 15px;
-    padding-right: 15px;
-    display: flex;
-    flex-direction: column;
-}
-
-#tituloEquipo {
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-size: xx-large;
-
-}
-
-.fotoMiembro {
-    width: 275px;
-    height: 210px;
-}
-
-.resena {
-    width: 600px;
-    font-size: large;
-    text-align: justify;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.cajaMiembro {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.miembro1 {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.miembro2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-}
-
-.nombre2 {
-    text-align: end;
-}
-
-/* Estilos Contacto */
-
 #contacto {
-    height: 80vh;
-    padding-top: 138px;
+  height: 80vh;
+  padding-top: 138px;
 }
 
 .textoPortada2 {
-    text-align: center;
+  text-align: center;
 }
 
 #contactoInput {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: larger;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: larger;
 }
 
 .input {
-    margin: 10px;
+  margin: 10px;
 }
 
 .botonEnviar {
-    margin: 5px;
-    display: flex;
-    justify-content: center;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
 }
-
-/* TABLET: RESOLUCIÓN MENOR A 1023px */
-
-@media screen and (max-width: 1023px) {
-
-    #servicios {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .articulo {
-        width: 100%;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    footer {
-        flex-direction: column;
-        align-content: center;
-        align-items: center;
-    }
-
-    .contenedorFooter {
-        text-align: center;
-        font-size: larger;
-    }
-
-    #menuTienda {
-        justify-content: space-between;
-    }
-}
-
-/* MOBILE: RESOLUCIÓN MENOR A 426px */
 
 @media screen and (max-width: 426px) {
-    * {
-        font-size: medium;
-    }
-
-    .logo {
-        height: 50px;
-        width: 50px;
-    }
-
-    .logoFooter {
-        width: 100px;
-        height: 100px;
-        padding: 3px;
-        margin: 3px;
-    }
-
-    #portada {
-        padding-top: 80px;
-    }
-
-    .contenido1 {
-        padding-top: 80px;
-    }
-
-    #tienda {
-        padding-top: 80px;
-    }
-
-    .botonesTienda {
-        height: 50px;
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: nowrap;
-        align-items: center;
-        padding: 0px;
-    }
-
-    #ordenarPor {
-        padding-right: 0px;
-    }
-
-    #menuTienda {
-        margin-top: 5px;
-        margin-bottom: 5px;
-        padding-bottom: 0px;
-        height: auto;
-    }
-
-    .botonProducto {
-        font-size: 16px;
-    }
-
-    .fotoProducto {
-        width: 140px;
-    }
-
-    .etiquetaProducto {
-        margin: 5px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-weight: bold;
-        border: solid lightgray;
-        border-width: 1px;
-        border-radius: 10%;
-    }
-
-    .video {
-        width: 280px;
-        height: 200px;
-    }
-
-    #equipo {
-        padding-top: 80px;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-bottom: 80px;
-    }
-
-    #tituloEquipo {
-        padding-top: 15px;
-        padding-bottom: 15px;
-        font-size: 30px;
-    }
-
-    .resena {
-        text-align: left;
-    }
-
-    .cajaMiembro {
-        text-align: center;
-    }
-
-    .miembro1 {
-        justify-content: center;
-    }
-
-    .miembro2 {
-        justify-content: center;
-    }
-
-    .nombre2 {
-        text-align: center;
-    }
-
-    #contacto {
-        height: 80vh;
-        padding-top: 100px;
-    }
-
-    #contactoInput {
-        align-items: flex-start;
-    }
+  #contacto {
+    height: 80vh;
+    padding-top: 100px;
+  }
+  #contactoInput {
+    align-items: flex-start;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */
