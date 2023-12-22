@@ -21,7 +21,6 @@ a {
   }
 }
 footer {
-  grid-area: footer;
   background-color: whitesmoke;
   display: flex;
   flex-wrap: wrap;
@@ -91,7 +90,6 @@ footer {
 }
 ul li {
   font-size: larger;
-  color: whitesmoke;
   font-weight: 900;
   font-style: italic;
   padding: 10px;
