@@ -1,16 +1,7 @@
-body nav {
-    background-color: $colorPrimario;
-    position: fixed;
-    height: 100%;
-    width: 150px;
-
-    ul li {
-        font-size: larger;
-        color: $colorSecundario;
-        font-weight: 900;
-        font-style: italic;
-        padding: 10px;
-    }
-
-
+ul li {
+    font-size: larger;
+    color: $colorSecundario;
+    font-weight: 900;
+    font-style: italic;
+    padding: 10px;
 }

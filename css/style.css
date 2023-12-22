@@ -83,29 +83,13 @@ footer {
   height: 90PX;
 }
 
-header {
-  background-color: whitesmoke;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: solid;
-  border-width: thin;
-}
-
 @media screen and (max-width: 426px) {
   .logo {
     height: 50px;
     width: 50px;
   }
 }
-body > nav {
-  background-color: black;
-  position: fixed;
-  height: 100%;
-  width: 150px;
-}
-body > nav ul li {
+ul li {
   font-size: larger;
   color: whitesmoke;
   font-weight: 900;
