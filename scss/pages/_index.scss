@@ -31,7 +31,7 @@
     justify-content: center;
     align-items: center;
     padding: 5px 10px;
-    margin: 100px 25px 100px 25px;
+    margin: 80px 25px 80px 25px;
 }
 
 #comoFunciona {
@@ -41,12 +41,14 @@
     justify-content: center;
     align-items: center;
     padding: 5px 10px;
-    margin: 50px 25px 50px 25px;
+    margin: 50px 25px 25px 25px;
 }
 
 .texto {
+    max-width: 600px;
     text-align: left;
     margin-top: 20px;
+    font-size: 20px;
 }
 
 .circulo {
@@ -59,13 +61,13 @@
     font-size: 24px;
     line-height: 2.5;
     text-align: center;
+    margin: 10px;
 }
 
 .articulo {
-    width: 200px;
-    text-align: left;
+    text-align: center;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
     padding: 10px;
