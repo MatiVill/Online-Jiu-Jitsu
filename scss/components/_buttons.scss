@@ -1,0 +1,5 @@
+.botonEnviar {
+    margin: 5px;
+    @include flex(row);
+    justify-content: center;
+}

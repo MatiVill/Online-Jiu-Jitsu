@@ -1,41 +1,31 @@
-.contenido1 {
-    font-size: larger;
-    margin: 10px;
+#bodyContenido {
     padding-top: 118px;
-}
 
-.contenido2 {
-    margin-top: 20px;
-    font-size: larger;
-    margin: 10px;
-}
+    .contenido {
+        font-size: larger;
+        margin: 10px;
 
-.contenedorVideo {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    flex-wrap: wrap;
-}
+        .listaVideos {
+            display: flex;
+            margin-bottom: 50px;
+            overflow: auto;
+            white-space: nowrap;
 
-.listaVideos {
-    display: flex;
-    margin-bottom: 50px;
-    overflow: auto;
-    white-space: nowrap;
-
-}
-
-.tamañoVideo {
-    width: 280px;
+            .contenedorVideo {
+                @include flex(column);
+                margin: 10px;
+                flex-wrap: wrap;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 426px) {
-    .contenido1 {
+    #bodyContenido {
         padding-top: 80px;
+            .video {
+                width: 280px;
+                height: 200px;
+            }
+        }
     }
-
-    .video {
-        width: 280px;
-        height: 200px;
-    }
-}

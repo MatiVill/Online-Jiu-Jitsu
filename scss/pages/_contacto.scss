@@ -1,38 +1,32 @@
 #contacto {
     height: 80vh;
     padding-top: 138px;
-}
 
-.textoPortada2 {
-    text-align: center;
-}
+    .textoPortada2 {
+        text-align: center;
+    }
 
-#contactoInput {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: larger;
-}
+    #contactoInput {
+        @include flex(column);
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: larger;
 
-.input {
-    margin: 10px;
-}
-
-.botonEnviar {
-    margin: 5px;
-    display: flex;
-    justify-content: center;
+        .input {
+            margin: 10px;
+        }
+    }
 }
 
 @media screen and (max-width: 426px) {
     #contacto {
         height: 80vh;
         padding-top: 100px;
+
+        #contactoInput {
+            align-items: flex-start;
+        }
     }
 
-    #contactoInput {
-        align-items: flex-start;
-    }
 }

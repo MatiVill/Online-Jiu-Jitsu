@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +19,13 @@ a {
     font-size: medium;
   }
 }
+.botonEnviar {
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 footer {
   background-color: whitesmoke;
   display: flex;
@@ -27,35 +33,30 @@ footer {
   justify-content: space-between;
   padding: 20px;
 }
-
-.logoFooter {
-  width: 200px;
-  height: 200px;
-  padding: 3px;
-  margin: 3px;
+footer .contenedorFooter {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-.logoRedes {
+footer .contenedorFooter #mapa {
+  width: 100%;
+  height: 100%;
+}
+footer .contenedorFooter .listaRedes {
+  display: flex;
+}
+footer .contenedorFooter .listaRedes .logoRedes {
   width: 50px;
   height: 50PX;
   margin-right: 10px;
   margin-left: 10px;
 }
-
-#mapa {
-  width: 100%;
-  height: 100%;
-}
-
-.listaRedes {
-  display: flex;
-}
-
-.contenedorFooter {
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+footer .contenedorFooter .logoFooter {
+  width: 200px;
+  height: 200px;
+  padding: 3px;
+  margin: 3px;
 }
 
 @media screen and (max-width: 1023px) {
@@ -64,7 +65,7 @@ footer {
     align-content: center;
     align-items: center;
   }
-  .contenedorFooter {
+  footer .contenedorFooter {
     text-align: center;
     font-size: larger;
   }
@@ -163,14 +164,15 @@ footer {
 .articulo {
   text-align: center;
   display: flex;
-  flex-wrap: nowrap;
   flex-direction: column;
+  flex-wrap: nowrap;
   align-items: center;
   padding: 10px;
 }
 
 #servicios {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   padding-top: 35px;
@@ -202,41 +204,31 @@ footer {
     padding-top: 80px;
   }
 }
-.contenido1 {
-  font-size: larger;
-  margin: 10px;
+#bodyContenido {
   padding-top: 118px;
 }
-
-.contenido2 {
-  margin-top: 20px;
+#bodyContenido .contenido {
   font-size: larger;
   margin: 10px;
 }
-
-.contenedorVideo {
+#bodyContenido .contenido .listaVideos {
+  display: flex;
+  margin-bottom: 50px;
+  overflow: auto;
+  white-space: nowrap;
+}
+#bodyContenido .contenido .listaVideos .contenedorVideo {
   display: flex;
   flex-direction: column;
   margin: 10px;
   flex-wrap: wrap;
 }
 
-.listaVideos {
-  display: flex;
-  margin-bottom: 50px;
-  overflow: auto;
-  white-space: nowrap;
-}
-
-.tamañoVideo {
-  width: 280px;
-}
-
 @media screen and (max-width: 426px) {
-  .contenido1 {
+  #bodyContenido {
     padding-top: 80px;
   }
-  .video {
+  #bodyContenido .video {
     width: 280px;
     height: 200px;
   }
@@ -325,6 +317,7 @@ footer {
   height: 50px;
   padding-right: 20px;
   display: flex;
+  flex-direction: row;
   justify-content: end;
   flex-wrap: nowrap;
   align-items: center;
@@ -340,6 +333,7 @@ footer {
 
 #menuTienda {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   height: 70px;
   align-items: center;
@@ -433,12 +427,10 @@ footer {
   height: 80vh;
   padding-top: 138px;
 }
-
-.textoPortada2 {
+#contacto .textoPortada2 {
   text-align: center;
 }
-
-#contactoInput {
+#contacto #contactoInput {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -446,15 +438,8 @@ footer {
   margin-bottom: 20px;
   font-size: larger;
 }
-
-.input {
+#contacto #contactoInput .input {
   margin: 10px;
-}
-
-.botonEnviar {
-  margin: 5px;
-  display: flex;
-  justify-content: center;
 }
 
 @media screen and (max-width: 426px) {
@@ -462,7 +447,7 @@ footer {
     height: 80vh;
     padding-top: 100px;
   }
-  #contactoInput {
+  #contacto #contactoInput {
     align-items: flex-start;
   }
 }

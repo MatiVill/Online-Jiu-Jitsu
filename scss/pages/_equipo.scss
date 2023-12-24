@@ -2,8 +2,7 @@
     padding-top: 118px;
     padding-left: 15px;
     padding-right: 15px;
-    display: flex;
-    flex-direction: column;
+    @include flex(column);
 }
 
 #tituloEquipo {
@@ -11,7 +10,6 @@
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: xx-large;
-
 }
 
 .fotoMiembro {

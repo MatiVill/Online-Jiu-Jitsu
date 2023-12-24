@@ -5,8 +5,7 @@
     color: $colorSecundario;
     font-size: x-large;
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    @include flex(column);
     justify-content: center;
     padding-top: 118px;
     align-items: center;
@@ -17,8 +16,7 @@
     margin-top: 50px;
     margin-bottom: 50px;
     max-width: 600px;
-    display: flex;
-    flex-direction: column;
+    @include flex(column);
     margin-left: 20px;
     margin-right: 20px;
 
@@ -26,8 +24,7 @@
 
 #presentacion {
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    @include flex(column);
     justify-content: center;
     align-items: center;
     padding: 5px 10px;
@@ -36,8 +33,7 @@
 
 #comoFunciona {
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    @include flex(column);
     justify-content: center;
     align-items: center;
     padding: 5px 10px;
@@ -66,15 +62,14 @@
 
 .articulo {
     text-align: center;
-    display: flex;
+    @include flex(column);
     flex-wrap: nowrap;
-    flex-direction: column;
     align-items: center;
     padding: 10px;
 }
 
 #servicios {
-    display: flex;
+    @include flex(row);
     flex-wrap: wrap;
     justify-content: space-around;
     padding-top: 35px;
@@ -89,8 +84,7 @@
 @media screen and (max-width: 1023px) {
 
     #servicios {
-        display: flex;
-        flex-direction: column;
+        @include flex(column);
         align-items: center;
         align-content: center;
         padding-left: 10px;
