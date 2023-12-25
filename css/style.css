@@ -180,6 +180,38 @@ footer .contenedorFooter .logoFooter {
   margin-right: 20px;
 }
 
+#bolitaProgreso {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border-color: black;
+  border-width: 3px;
+  margin: 15px;
+  animation-name: animacionBolita;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-duration: 8s;
+}
+
+@keyframes animacionBolita {
+  0% {
+    background-color: whitesmoke;
+    transform: translate(-100px);
+  }
+  35% {
+    background-color: darkblue;
+  }
+  55% {
+    background-color: purple;
+  }
+  75% {
+    background-color: saddlebrown;
+  }
+  100% {
+    background-color: black;
+    transform: translate(100px);
+  }
+}
 #presentacion {
   display: flex;
   flex-direction: column;
@@ -205,7 +237,8 @@ footer .contenedorFooter .logoFooter {
   background-size: cover;
   background-position: center;
   color: whitesmoke;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 500;
 }
 #servicios .circulo {
   border-radius: 50%;
