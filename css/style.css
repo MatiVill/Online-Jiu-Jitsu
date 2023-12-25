@@ -1,3 +1,9 @@
+#comoFunciona, #presentacion, #portada {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +25,13 @@ a {
     font-size: medium;
   }
 }
+.texto {
+  max-width: 600px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
 .botonEnviar {
   margin: 5px;
   display: flex;
@@ -26,6 +39,56 @@ a {
   justify-content: center;
 }
 
+.botonProducto {
+  min-width: 115px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 30px;
+  background: whitesmoke;
+  color: black;
+  text-align: center;
+  border: solid thin;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.botonProducto:hover {
+  background-color: black;
+  color: whitesmoke;
+}
+
+.botonesTienda {
+  height: 50px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.botonesTienda #ordenarPor {
+  padding-right: 20px;
+}
+.botonesTienda #iconoFiltro {
+  width: 20px;
+}
+
+@media screen and (max-width: 426px) {
+  .botonProducto {
+    font-size: 16px;
+  }
+  .botonesTienda {
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 0px;
+  }
+  .botonesTienda #ordenarPor {
+    padding-right: 0px;
+  }
+}
 footer {
   background-color: whitesmoke;
   display: flex;
@@ -102,16 +165,12 @@ footer .contenedorFooter .logoFooter {
   background-position: center;
   color: whitesmoke;
   font-size: x-large;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   padding-top: 118px;
-  align-items: center;
   min-height: 50vh;
 }
-
-#textoPortada {
+#portada #textoPortada {
   margin-top: 50px;
   margin-bottom: 50px;
   max-width: 600px;
@@ -122,52 +181,17 @@ footer .contenedorFooter .logoFooter {
 }
 
 #presentacion {
-  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 5px 10px;
   margin: 80px 25px 80px 25px;
 }
 
 #comoFunciona {
-  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 5px 10px;
   margin: 50px 25px 25px 25px;
-}
-
-.texto {
-  max-width: 600px;
-  text-align: left;
-  margin-top: 20px;
-  font-size: 20px;
-}
-
-.circulo {
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  background: whitesmoke;
-  color: black;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 2.5;
-  text-align: center;
-  margin: 10px;
-}
-
-.articulo {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  padding: 10px;
 }
 
 #servicios {
@@ -183,6 +207,26 @@ footer .contenedorFooter .logoFooter {
   color: whitesmoke;
   font-weight: 700;
 }
+#servicios .circulo {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: whitesmoke;
+  color: black;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 2.5;
+  text-align: center;
+  margin: 10px;
+}
+#servicios .articulo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 10px;
+}
 
 @media screen and (max-width: 1023px) {
   #servicios {
@@ -193,7 +237,7 @@ footer .contenedorFooter .logoFooter {
     padding-left: 10px;
     padding-right: 10px;
   }
-  .articulo {
+  #servicios .articulo {
     width: 100%;
     margin-left: 10px;
     margin-right: 10px;
@@ -213,6 +257,7 @@ footer .contenedorFooter .logoFooter {
 }
 #bodyContenido .contenido .listaVideos {
   display: flex;
+  flex-direction: row;
   margin-bottom: 50px;
   overflow: auto;
   white-space: nowrap;
@@ -240,45 +285,40 @@ footer .contenedorFooter .logoFooter {
   display: flex;
   flex-direction: column;
 }
-
-#tituloEquipo {
+#equipo #tituloEquipo {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
   font-size: xx-large;
 }
-
-.fotoMiembro {
+#equipo .cajaMiembro {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#equipo .cajaMiembro .miembro1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#equipo .cajaMiembro .miembro2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+#equipo .cajaMiembro .nombre2 {
+  text-align: end;
+}
+#equipo .cajaMiembro .fotoMiembro {
   width: 275px;
   height: 210px;
 }
-
-.resena {
+#equipo .cajaMiembro .resena {
   width: 650px;
   font-size: large;
   text-align: justify;
   margin-left: 10px;
   margin-right: 10px;
-}
-
-.cajaMiembro {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.miembro1 {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.miembro2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-
-.nombre2 {
-  text-align: end;
 }
 
 @media screen and (max-width: 426px) {
@@ -288,50 +328,32 @@ footer .contenedorFooter .logoFooter {
     padding-right: 15px;
     padding-bottom: 80px;
   }
-  #tituloEquipo {
+  #equipo #tituloEquipo {
     padding-top: 15px;
     padding-bottom: 15px;
     font-size: 30px;
   }
-  .resena {
+  #equipo .resena {
     text-align: left;
   }
-  .cajaMiembro {
+  #equipo .cajaMiembro {
     text-align: center;
   }
-  .miembro1 {
+  #equipo .miembro1 {
     justify-content: center;
   }
-  .miembro2 {
-    justify-content: center;
+  #equipo .miembro2 {
+    justify-content: center !important;
+    text-align: center !important;
   }
-  .nombre2 {
-    text-align: center;
+  #equipo .nombre2 {
+    text-align: center !important;
   }
 }
 #tienda {
   padding-top: 118px;
 }
-
-.botonesTienda {
-  height: 50px;
-  padding-right: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  flex-wrap: nowrap;
-  align-items: center;
-}
-
-#ordenarPor {
-  padding-right: 20px;
-}
-
-#iconoFiltro {
-  width: 20px;
-}
-
-#menuTienda {
+#tienda #menuTienda {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -342,31 +364,11 @@ footer .contenedorFooter .logoFooter {
   overflow: auto;
   white-space: nowrap;
 }
-
-.botonProducto {
-  min-width: 115px;
-  margin-left: 5px;
-  margin-right: 5px;
-  border-radius: 30px;
-  background: whitesmoke;
-  color: black;
-  text-align: center;
-  border: solid thin;
-  font-size: 18px;
-  font-style: italic;
-}
-
-.botonProducto:hover {
-  background-color: black;
-  color: whitesmoke;
-}
-
-.escaparate {
+#tienda .escaparate {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
-.etiquetaProducto {
+#tienda .escaparate .etiquetaProducto {
   max-width: 300px;
   margin: 10px;
   display: flex;
@@ -389,25 +391,12 @@ footer .contenedorFooter .logoFooter {
   #tienda {
     padding-top: 80px;
   }
-  .botonesTienda {
-    height: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
-    align-items: center;
-    padding: 0px;
-  }
-  #ordenarPor {
-    padding-right: 0px;
-  }
-  #menuTienda {
+  #tienda #menuTienda {
     margin-top: 5px;
     margin-bottom: 5px;
     padding-bottom: 0px;
     height: auto;
-  }
-  .botonProducto {
-    font-size: 16px;
+    justify-content: flex-start;
   }
   .fotoProducto {
     width: 140px;

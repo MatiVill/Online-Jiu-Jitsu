@@ -6,7 +6,7 @@
         margin: 10px;
 
         .listaVideos {
-            display: flex;
+            @include flex(row);
             margin-bottom: 50px;
             overflow: auto;
             white-space: nowrap;
@@ -23,9 +23,10 @@
 @media screen and (max-width: 426px) {
     #bodyContenido {
         padding-top: 80px;
-            .video {
-                width: 280px;
-                height: 200px;
-            }
+
+        .video {
+            width: 280px;
+            height: 200px;
         }
     }
+}

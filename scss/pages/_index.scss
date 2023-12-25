@@ -4,68 +4,33 @@
     background-position: center;
     color: $colorSecundario;
     font-size: x-large;
-    text-align: center;
     @include flex(column);
-    justify-content: center;
+    @extend %textoCentrado;
     padding-top: 118px;
-    align-items: center;
     min-height: 50vh;
-}
 
-#textoPortada {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    max-width: 600px;
-    @include flex(column);
-    margin-left: 20px;
-    margin-right: 20px;
-
+    #textoPortada {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        max-width: 600px;
+        @include flex(column);
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 
 #presentacion {
-    text-align: center;
     @include flex(column);
-    justify-content: center;
-    align-items: center;
+    @extend %textoCentrado;
     padding: 5px 10px;
     margin: 80px 25px 80px 25px;
 }
 
 #comoFunciona {
-    text-align: center;
     @include flex(column);
-    justify-content: center;
-    align-items: center;
+    @extend %textoCentrado;
     padding: 5px 10px;
     margin: 50px 25px 25px 25px;
-}
-
-.texto {
-    max-width: 600px;
-    text-align: left;
-    margin-top: 20px;
-    font-size: 20px;
-}
-
-.circulo {
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    background: whitesmoke;
-    color: black;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 2.5;
-    text-align: center;
-    margin: 10px;
-}
-
-.articulo {
-    text-align: center;
-    @include flex(column);
-    flex-wrap: nowrap;
-    align-items: center;
-    padding: 10px;
 }
 
 #servicios {
@@ -79,7 +44,29 @@
     background-position: center;
     color: $colorSecundario;
     font-weight: 700;
+
+    .circulo {
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        background: $colorSecundario;
+        color: $colorPrimario;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 2.5;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .articulo {
+        text-align: center;
+        @include flex(column);
+        flex-wrap: nowrap;
+        align-items: center;
+        padding: 10px;
+    }
 }
+
 
 @media screen and (max-width: 1023px) {
 
@@ -89,12 +76,12 @@
         align-content: center;
         padding-left: 10px;
         padding-right: 10px;
-    }
 
-    .articulo {
-        width: 100%;
-        margin-left: 10px;
-        margin-right: 10px;
+        .articulo {
+            width: 100%;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
     }
 }
 
@@ -102,5 +89,4 @@
     #portada {
         padding-top: 80px;
     }
-
 }
