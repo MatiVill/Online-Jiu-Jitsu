@@ -1,32 +1,60 @@
-#contacto {
-    height: 80vh;
+#contactoMain {
+    height: 100vh;
     padding-top: 138px;
+    @include flex(row);
+    justify-content: center;
 
-    .textoPortada2 {
-        text-align: center;
-    }
-
-    #contactoInput {
+    #cajaContacto {
+        background-color: rgba($colorPrimario, $alpha: 0.1);
+        border-radius: 20px;
+        max-width: 400px;
+        max-height: 500px;
+        padding: 30px;
+        border: $colorPrimario 3px solid;
         @include flex(column);
+        justify-content: center;
         align-items: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        font-size: larger;
+        margin: 10px;
+
+        .textoPortada2 {
+            text-align: center;
+        }
 
         .input {
             margin: 10px;
         }
+
+        #nombre {
+            @extend %estilosInput;
+        }
+
+        #correo {
+            @extend %estilosInput;
+        }
+
+        #experiencia {
+            @extend %estilosInput;
+        }
+
+        #mensaje {
+            @extend %estilosInput;
+        }
+    }
+
+    .contenedorBoton {
+        margin: 5px;
+        @include flex(row);
+        justify-content: center;
     }
 }
 
 @media screen and (max-width: 426px) {
-    #contacto {
-        height: 80vh;
+    #contactoMain {
         padding-top: 100px;
 
-        #contactoInput {
-            align-items: flex-start;
+        #cajaContacto {
+            padding: 10px;
+            margin: 5px;
         }
     }
-
 }

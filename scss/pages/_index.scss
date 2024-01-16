@@ -1,5 +1,5 @@
 #portada {
-    background-image: url(../img/fondo1.jpg);
+    background-image: url(../img/fondo1.jpeg);
     background-size: cover;
     background-position: center;
     color: $colorSecundario;
@@ -54,7 +54,6 @@
     }
 }
 
-
 #presentacion {
     @include flex(column);
     @extend %textoCentrado;
@@ -75,7 +74,7 @@
     justify-content: space-around;
     padding-top: 35px;
     padding-bottom: 35px;
-    background-image: url(../img/fondo2.jpg);
+    background-image: url(../img/fondo2.jpeg);
     background-size: cover;
     background-position: center;
     color: $colorSecundario;

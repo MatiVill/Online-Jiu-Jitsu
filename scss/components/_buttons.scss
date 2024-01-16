@@ -1,8 +1,12 @@
-.botonEnviar {
-    margin: 5px;
-    @include flex(row);
-    justify-content: center;
+.botonContacto {
+    background-color: $colorPrimario;
+    color: $colorSecundario;
+    border-radius: 15px;
+    min-width: 115px;
+    font-weight: 500;
+    font-style: italic;
 }
+
 
 //TIENDA//
 

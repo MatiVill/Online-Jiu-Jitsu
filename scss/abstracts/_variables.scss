@@ -6,3 +6,9 @@ $colorSecundario: whitesmoke;
     justify-content: center;
     align-items: center;
 }
+
+%estilosInput {
+    display: flex;
+    height: 30px;
+    width: 200px;
+}

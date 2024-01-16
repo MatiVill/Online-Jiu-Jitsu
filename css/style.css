@@ -4,6 +4,12 @@
   align-items: center;
 }
 
+#contactoMain #cajaContacto #mensaje, #contactoMain #cajaContacto #experiencia, #contactoMain #cajaContacto #correo, #contactoMain #cajaContacto #nombre {
+  display: flex;
+  height: 30px;
+  width: 200px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -32,11 +38,13 @@ a {
   font-size: 20px;
 }
 
-.botonEnviar {
-  margin: 5px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.botonContacto {
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 15px;
+  min-width: 115px;
+  font-weight: 500;
+  font-style: italic;
 }
 
 .botonProducto {
@@ -160,7 +168,7 @@ footer .contenedorFooter .logoFooter {
 }
 
 #portada {
-  background-image: url(../img/fondo1.jpg);
+  background-image: url(../img/fondo1.jpeg);
   background-size: cover;
   background-position: center;
   color: whitesmoke;
@@ -233,7 +241,7 @@ footer .contenedorFooter .logoFooter {
   justify-content: space-around;
   padding-top: 35px;
   padding-bottom: 35px;
-  background-image: url(../img/fondo2.jpg);
+  background-image: url(../img/fondo2.jpeg);
   background-size: cover;
   background-position: center;
   color: whitesmoke;
@@ -445,32 +453,46 @@ footer .contenedorFooter .logoFooter {
     border-radius: 10%;
   }
 }
-#contacto {
-  height: 80vh;
+#contactoMain {
+  height: 100vh;
   padding-top: 138px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-#contacto .textoPortada2 {
-  text-align: center;
-}
-#contacto #contactoInput {
+#contactoMain #cajaContacto {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  max-width: 400px;
+  max-height: 500px;
+  padding: 30px;
+  border: black 3px solid;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: larger;
-}
-#contacto #contactoInput .input {
   margin: 10px;
+}
+#contactoMain #cajaContacto .textoPortada2 {
+  text-align: center;
+}
+#contactoMain #cajaContacto .input {
+  margin: 10px;
+}
+#contactoMain .contenedorBoton {
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 @media screen and (max-width: 426px) {
-  #contacto {
-    height: 80vh;
+  #contactoMain {
     padding-top: 100px;
   }
-  #contacto #contactoInput {
-    align-items: flex-start;
+  #contactoMain #cajaContacto {
+    padding: 10px;
+    margin: 5px;
   }
 }
 
