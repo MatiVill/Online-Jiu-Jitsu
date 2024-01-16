@@ -19,7 +19,7 @@
             @include flex(row);
             flex-wrap: wrap;
         }
-        
+
         .miembro2 {
             @include flex(row);
             flex-wrap: wrap;
@@ -34,6 +34,7 @@
             width: 275px;
             height: 210px;
         }
+
         .resena {
             width: 650px;
             font-size: large;
@@ -52,31 +53,32 @@
         padding-right: 15px;
         padding-bottom: 80px;
 
-        #tituloEquipo {
-            padding-top: 15px;
-            padding-bottom: 15px;
-            font-size: 30px;
-        }
-
-        .resena {
-            text-align: left;
-        }
-    
         .cajaMiembro {
-            text-align: center;
-        }
-    
-        .miembro1 {
-            justify-content: center;
-        }
-    
-        .miembro2 {
-            justify-content: center!important;
-            text-align: center!important;
-        }
-    
-        .nombre2 {
-            text-align: center!important;
+            text-align: center; 
+            
+            #tituloEquipo {
+                padding-top: 15px;
+                padding-bottom: 15px;
+                font-size: 30px;
+            }
+
+            .resena {
+                text-align: left;
+                font-size: 16px;
+            }
+
+            .miembro1 {
+                justify-content: center;
+            }
+
+            .miembro2 {
+                justify-content: center !important;
+                text-align: center !important;
+            }
+
+            .nombre2 {
+                text-align: center !important;
+            }
         }
     }
 }

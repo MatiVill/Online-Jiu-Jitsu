@@ -38,6 +38,11 @@ a {
   font-size: 20px;
 }
 
+@media screen and (max-width: 426px) {
+  .texto {
+    font-size: 16px;
+  }
+}
 .botonContacto {
   background-color: black;
   color: whitesmoke;
@@ -245,8 +250,8 @@ footer .contenedorFooter .logoFooter {
   background-size: cover;
   background-position: center;
   color: whitesmoke;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 350;
 }
 #servicios .circulo {
   border-radius: 50%;
@@ -369,25 +374,26 @@ footer .contenedorFooter .logoFooter {
     padding-right: 15px;
     padding-bottom: 80px;
   }
-  #equipo #tituloEquipo {
+  #equipo .cajaMiembro {
+    text-align: center;
+  }
+  #equipo .cajaMiembro #tituloEquipo {
     padding-top: 15px;
     padding-bottom: 15px;
     font-size: 30px;
   }
-  #equipo .resena {
+  #equipo .cajaMiembro .resena {
     text-align: left;
+    font-size: 16px;
   }
-  #equipo .cajaMiembro {
-    text-align: center;
-  }
-  #equipo .miembro1 {
+  #equipo .cajaMiembro .miembro1 {
     justify-content: center;
   }
-  #equipo .miembro2 {
+  #equipo .cajaMiembro .miembro2 {
     justify-content: center !important;
     text-align: center !important;
   }
-  #equipo .nombre2 {
+  #equipo .cajaMiembro .nombre2 {
     text-align: center !important;
   }
 }
@@ -424,11 +430,16 @@ footer .contenedorFooter .logoFooter {
 }
 
 @media screen and (max-width: 1023px) {
-  #menuTienda {
-    justify-content: space-between;
+  #tienda .fotoProducto {
+    width: 200px;
   }
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 625px) {
+  #tienda #menuTienda {
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 442px) {
   #tienda {
     padding-top: 80px;
   }
@@ -438,6 +449,11 @@ footer .contenedorFooter .logoFooter {
     padding-bottom: 0px;
     height: auto;
     justify-content: flex-start;
+  }
+  .escaparate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .fotoProducto {
     width: 140px;

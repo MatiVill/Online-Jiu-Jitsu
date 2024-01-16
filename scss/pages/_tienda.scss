@@ -11,7 +11,7 @@
         overflow: auto;
         white-space: nowrap;
     }
-    
+
     .escaparate {
         margin-top: 20px;
         margin-bottom: 20px;
@@ -32,12 +32,22 @@
 }
 
 @media screen and (max-width: 1023px) {
-    #menuTienda {
-        justify-content: space-between;
+#tienda {
+    .fotoProducto {
+        width: 200px;
+    }
+}
+}
+
+@media screen and (max-width: 625px) {
+    #tienda {
+        #menuTienda {
+            justify-content: flex-start;
+        }
     }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 442px) {
     #tienda {
         padding-top: 80px;
 
@@ -48,6 +58,10 @@
             height: auto;
             justify-content: flex-start;
         }
+    }
+    .escaparate {
+        @include flex(column);
+        align-items: center;
     }
 
     .fotoProducto {
